@@ -27,7 +27,7 @@ export default function AboutPage() {
       />
 
       {/* Biography & Portrait Grid */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
         {/* Left: Comprehensive Biography Text */}
         <div className="lg:col-span-7 space-y-6 text-neutral-700 dark:text-neutral-300 leading-relaxed">
           <div className="space-y-4">
@@ -43,58 +43,57 @@ export default function AboutPage() {
 
           {/* Key Pillars / Values */}
           <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="rounded-xl border border-neutral-200/80 bg-neutral-50/50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+            <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-4.5 dark:border-neutral-800 dark:bg-neutral-900/40">
               <span className="font-mono text-xs font-semibold text-neutral-950 dark:text-neutral-100">
                 01. Rigorous Authentication
               </span>
-              <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+              <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
                 Evaluating source integrity through historical chains, biographical reliability, and philological scrutiny.
               </p>
             </div>
-            <div className="rounded-xl border border-neutral-200/80 bg-neutral-50/50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+            <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-4.5 dark:border-neutral-800 dark:bg-neutral-900/40">
               <span className="font-mono text-xs font-semibold text-neutral-950 dark:text-neutral-100">
                 02. Algorithmic Thinking
               </span>
-              <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+              <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
                 Applying structural decomposition, graph theory, and clean software architecture to complex domains.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Right: Portrait Card & Key Facts */}
-        <div className="lg:col-span-5 space-y-6">
-          <div className="overflow-hidden rounded-3xl border border-neutral-200/90 bg-white p-3 shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
-            <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
+        {/* Right: Boundary-Free Elevated Oval Portrait & Key Facts */}
+        <div className="lg:col-span-5 flex flex-col items-center space-y-6">
+          <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:-translate-y-4">
+            {/* Ambient Radial Glow */}
+            <div className="absolute -inset-4 rounded-[999px] bg-gradient-to-b from-neutral-300/30 to-transparent dark:from-neutral-700/20 dark:to-transparent blur-2xl -z-10" />
+
+            {/* Boundary-Free Oval Photo */}
+            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[999px] shadow-[0_20px_50px_-10px_rgba(0,0,0,0.22)] dark:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.6)]">
               <Image
                 src="/images/basit-majeed.jpg"
                 alt="Basit Majeed"
                 fill
-                sizes="(max-width: 768px) 100vw, 400px"
-                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 320px"
+                className="object-cover object-top filter contrast-[1.02]"
                 priority
               />
             </div>
-            <div className="p-4 space-y-2">
-              <div className="flex items-center justify-between">
+
+            <div className="mt-4 text-center space-y-1">
+              <div className="flex items-center justify-center gap-2">
                 <span className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
                   Basit Majeed
                 </span>
-                <Badge variant="accent">Active Researcher</Badge>
+                <Badge variant="accent" className="text-[10px]">Scholar-Engineer</Badge>
               </div>
-              <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                Student of Islamic Studies, Arabic &amp; Computer Engineering
+              <p className="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+                Kashmir, India
               </p>
-              <div className="pt-3 border-t border-neutral-100 dark:border-neutral-800/80 flex items-center justify-between text-xs">
-                <span className="text-neutral-500 dark:text-neutral-400">Location</span>
-                <span className="font-medium text-neutral-800 dark:text-neutral-200">
-                  {profileData.location}
-                </span>
-              </div>
             </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/50 p-5 dark:border-neutral-800 dark:bg-neutral-900/30 text-center">
+          <div className="w-full max-w-sm rounded-2xl border border-neutral-200/80 bg-neutral-50/50 p-5 dark:border-neutral-800 dark:bg-neutral-900/30 text-center">
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
               Have a research inquiry or project?
             </h3>
@@ -103,7 +102,7 @@ export default function AboutPage() {
             </p>
             <Link href="/contact">
               <Button size="sm" className="w-full gap-1.5 text-xs">
-                <span>View Contact Details</span>
+                <span>View Contact Directory</span>
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </Button>
             </Link>
