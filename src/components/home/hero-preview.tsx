@@ -50,7 +50,7 @@ export function HeroPreview() {
         {/* Top Giant Word: "SCHOLAR" */}
         <div
           aria-hidden="true"
-          className="relative z-10 w-full text-center select-none font-black tracking-tighter text-[15vw] sm:text-[16vw] lg:text-[16.5vw] leading-[0.88] text-white uppercase drop-shadow-md"
+          className="relative z-20 w-full text-center select-none font-black tracking-tighter text-[15vw] sm:text-[16vw] lg:text-[16.5vw] leading-[0.88] text-white uppercase drop-shadow-md"
         >
           SCHOLAR
         </div>
@@ -76,7 +76,7 @@ export function HeroPreview() {
         </div>
 
         {/* Center Piece: Transparent Cutout Portrait with Studio Lighting */}
-        <div className="relative z-25 -mt-[9vw] sm:-mt-[11vw] w-[290px] sm:w-[380px] md:w-[440px] lg:w-[490px] aspect-[4/5] pointer-events-none transition-transform duration-700 hover:scale-[1.02]">
+        <div className="relative z-10 -mt-[9vw] sm:-mt-[11vw] w-[290px] sm:w-[380px] md:w-[440px] lg:w-[490px] aspect-[4/5] pointer-events-none transition-transform duration-700 hover:scale-[1.02]">
           <Image
             src="/images/basit-majeed-cutout.png"
             alt="Basit Majeed — Scholar & Computer Engineer"
@@ -90,7 +90,7 @@ export function HeroPreview() {
         {/* Bottom Giant Word: "ENGINEER" */}
         <div
           aria-hidden="true"
-          className="relative z-20 w-full text-center select-none font-black tracking-tighter text-[15vw] sm:text-[16vw] lg:text-[16.5vw] leading-[0.88] text-white uppercase -mt-[9vw] sm:-mt-[11vw] drop-shadow-xl"
+          className="relative z-30 w-full text-center select-none font-black tracking-tighter text-[15vw] sm:text-[16vw] lg:text-[16.5vw] leading-[0.88] text-white uppercase -mt-[9vw] sm:-mt-[11vw] drop-shadow-xl"
         >
           ENGINEER
         </div>
