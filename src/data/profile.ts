@@ -73,20 +73,6 @@ export const profileData = {
       icon: "facebook",
       description: "Scholarly community discussions & articles"
     },
-    {
-      name: "GitHub",
-      url: "https://github.com",
-      handle: "github.com/basitmajeed",
-      icon: "github",
-      description: "Open-source code, computational tools & utilities"
-    },
-    {
-      name: "LinkedIn",
-      url: "https://linkedin.com",
-      handle: "linkedin.com/in/basitmajeed",
-      icon: "linkedin",
-      description: "Professional background, network & recommendations"
-    }
   ] as SocialLink[],
   stats: [
     { label: "Dual Focus", value: "CS + Hadith" },

@@ -1,5 +1,5 @@
 import { Mail, ArrowUpRight } from "lucide-react";
-import { GithubIcon, InstagramIcon, FacebookIcon, LinkedinIcon } from "@/components/icons/social";
+import { InstagramIcon, FacebookIcon } from "@/components/icons/social";
 import { profileData } from "@/data/profile";
 
 export function Footer() {
@@ -55,28 +55,6 @@ export function Footer() {
             >
               <FacebookIcon className="h-4 w-4" />
               <span>Facebook</span>
-              <ArrowUpRight className="h-3 w-3 opacity-60" />
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-neutral-600 transition-colors hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-100"
-              aria-label="GitHub Profile"
-            >
-              <GithubIcon className="h-4 w-4" />
-              <span>GitHub</span>
-              <ArrowUpRight className="h-3 w-3 opacity-60" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-neutral-600 transition-colors hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-100"
-              aria-label="LinkedIn Profile"
-            >
-              <LinkedinIcon className="h-4 w-4" />
-              <span>LinkedIn</span>
               <ArrowUpRight className="h-3 w-3 opacity-60" />
             </a>
           </div>

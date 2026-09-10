@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ArrowUpRight, Mail, MessageSquare, ShieldCheck } from "lucide-react";
-import { GithubIcon, InstagramIcon, FacebookIcon, LinkedinIcon } from "@/components/icons/social";
+import { InstagramIcon, FacebookIcon } from "@/components/icons/social";
 import { PageHeader } from "@/components/shared/page-header";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,9 +18,7 @@ export default function ContactPage() {
   const iconMap: Record<string, React.ReactNode> = {
     mail: <Mail className="h-5 w-5" />,
     instagram: <InstagramIcon className="h-5 w-5" />,
-    facebook: <FacebookIcon className="h-5 w-5" />,
-    github: <GithubIcon className="h-5 w-5" />,
-    linkedin: <LinkedinIcon className="h-5 w-5" />
+    facebook: <FacebookIcon className="h-5 w-5" />
   };
 
   return (
